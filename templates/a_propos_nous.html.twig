@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+<style media="screen">
+.fastview{
+  width: 100%;
+  height: 400px;
+}
+</style>
+<div class="h-50 text-center">
+  <img src="{{asset('img/imageBandeau1.JPG')}}" alt="vitrine" style="width:100%;">
+  <div class="container-fluid centered large mt-5">
+    <h1 class="large text-light">À Propos de Nous</h1>
+    <p class="text-light normal">Texte à propos de ce que l'on fait</p>
+    <p class="text-light normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+  </div>
+</div>
+
+<div class="container-fluid mt-5">
+  <div class="row">
+    <p style= "width: 90%; margin-left: 5%;" class="normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</p>
+  </div>
+</div>
+
+<h2 class = "mt-5 mb-5 title" style="text-align:center;">Nos Compétence</h2>
+<div class="container-fluid text-center row">
+  <div class="row">
+      <div class="col-sm md-4">
+        <div class="card">
+          <img src="{{asset('img/charpenteVueRapide.JPG')}}" class="img-fluid fastview" alt="Jane">
+          <div class="container">
+            <h2>Meunuiserie</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm md-4">
+        <div class="card">
+          <img src="{{asset('img/couvertureVueRapide.JPG')}}" class="img-fluid fastview" alt="Mike">
+          <div class="container">
+            <h2>Couverture</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm md-4">
+        <div class="card">
+          <img src="{{asset('img/ouvrageVueRapide.JPG')}}" class="img-fluid fastview" alt="John">
+          <div class="container">
+            <h2>ouvrage</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="fluid-container text-center">
+  <h2 class="text-center mt-4 mb-4 title">Où nous trouver</h2>
+</div>
+<div id="map-container-google-1" class="z-depth-1-half map-container">
+  <iframe src="https://maps.google.com/maps?q=tours&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+  style="border:0" allowfullscreen class="centered"></iframe>
+</div>
+
+
+{% endblock %}

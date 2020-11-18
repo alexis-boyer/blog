@@ -1,0 +1,81 @@
+.container {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1em;
+}
+
+.item {
+  width: 350px;
+  height: 220px;
+  padding: 10px;
+  margin-right: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.item1 {
+  width: 750px;
+  height: 220px;
+  padding: 10px;
+  margin-right: 50px;
+  display: inline-block;
+  vertical-align: middle
+  
+ 
+}
+
+.maps{
+	margin-top: 250px;
+	width: 100%;
+}
+
+
+
+input{
+	width: 355px;
+	height: 40px;
+	margin: 5px;
+	border-left:;
+	border-top: none;
+	border-right:;
+	border-radius: 10px;
+	
+
+	
+}
+
+select {
+	width: 730px;
+	height: 40px;
+	margin: 5px;
+	border-left:;
+	border-top: none;
+	border-right: ;
+	border-radius: 10px;
+
+}
+textarea{
+	width: 730px;
+	height: 110px;
+	margin: 5px;
+	border-left:;
+	border-top: none;
+	border-right:;
+	border-radius: 10px;
+	
+}
+
+.send,.effacer{
+	background-color:teal;
+	height: 50px;
+	width: 150px;
+	color: white;
+}
+body{
+	background-color:
+	
+}
+
+p{
+color:#34181d;
+}
