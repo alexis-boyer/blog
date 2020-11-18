@@ -42,4 +42,12 @@ class ConferenceController extends AbstractController
         {
             return $this->render('inscription.html.twig');
         }
+
+        /**
+         * @Route("/galerie", name="galerie")
+         */
+          public function galerie()
+          {
+              return $this->render('galerie.html.twig');
+          }
 }
