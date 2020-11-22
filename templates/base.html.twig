@@ -45,8 +45,8 @@
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- BLOCK : navbar -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #CAA54D;opacity: 0.9;color: #534421;">
-  <a class="navbar-brand" href="#">
+<nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #CAA54D;opacity: 0.9;color: #534421;">
+  <a class="navbar-brand" href="{{path("index")}}">
     <img src="{{asset('img/logo-maitreartisan.png')}}" width="50" height="50" alt="">
   </a>
   <ul class="navbar-nav mr-auto">
@@ -54,7 +54,7 @@
       <a class="nav-link font-weight-bold text-uppercase px-4" href="#">Contact </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link font-weight-bold text-uppercase px-4" href="#">Galerie </a>
+      <a class="nav-link font-weight-bold text-uppercase px-4" href="{{path("galerie")}}">Galerie </a>
     </li>
     <li class="nav-item">
       <a class="nav-link font-weight-bold text-uppercase px-4" href="#">Contactez-Nous </a>
@@ -68,7 +68,7 @@
   </ul>
 </nav>
 
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #CAA54D;opacity: 0;color: #534421;">
+<nav class="navbar navbar-expand-md navbar-light" style="background-color: #CAA54D;opacity: 0;color: #534421;">
   <a class="navbar-brand" href="#">
     <img src="{{asset('img/logo-maitreartisan.png')}}" width="50" height="50" alt="">
   </a>
@@ -103,8 +103,8 @@
 
         <nav class="navbar navbar-expand-md navbar-light position-sticky">
           <ul class="navbar-nav py-4 mx-auto ">
-            <li class="nav-item"><a class="nav-link font-weight-bold text-uppercase px-4" href="#Acceuil">Acceuil</a></li>
-            <li class="nav-item"><a class="nav-link font-weight-bold text-uppercase px-4" href = "#Contact">À Porpos de Nous</a></li>
+            <li class="nav-item"><a class="nav-link font-weight-bold text-uppercase px-4" href="{{path("index")}}">Acceuil</a></li>
+            <li class="nav-item"><a class="nav-link font-weight-bold text-uppercase px-4" href = "{{path("apropos")}}">À Porpos de Nous</a></li>
             <li class="nav-item"><a class="nav-link font-weight-bold text-uppercase px-4" href = "#legale">Mentions légales</a></li>
             <li class="nav-item"><a class="nav-link font-weight-bold text-uppercase px-4" href = "#plan">Plan du site</a></li>
           </ul>
