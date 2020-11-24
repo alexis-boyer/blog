@@ -35,19 +35,35 @@ class ConferenceController extends AbstractController
           ]);
       }
 
-      /**
-       * @Route("/inscription", name="inscription")
-       */
-        public function inscription()
-        {
-            return $this->render('inscription.html.twig');
-        }
+    /**
+     * @Route("/inscription", name="inscription")
+     */
+      public function inscription()
+      {
+          return $this->render('inscription.html.twig');
+      }
 
-        /**
-         * @Route("/galerie", name="galerie")
-         */
-          public function galerie()
-          {
-              return $this->render('galerie.html.twig');
-          }
+    /**
+     * @Route("/galerie/charpente", name="galerieCharpente")
+     */
+      public function galerieCharpente()
+      {
+          return $this->render('galerie/charpente.html.twig');
+      }
+
+    /**
+     * @Route("/galerie/couverture", name="galerieCouverture")
+     */
+      public function galerieCouverture()
+      {
+          return $this->render('galerie/couverture.html.twig');
+      }
+
+    /**
+     * @Route("/galerie/eouvre", name="galerieEouvre")
+     */
+      public function galerieEouvre()
+      {
+          return $this->render('galerie/eouvre.html.twig');
+      }
 }

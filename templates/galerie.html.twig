@@ -1,6 +1,8 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+
+<link rel="stylesheet" href="{{asset("css/index.css")}}">
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -81,6 +83,10 @@
       column-width: 100%;
     }
   }
+
+  .image-galerie{
+    height: 300px;
+  }
   </style>
 
     <title>Le Germain artisants - galerie</title>
@@ -91,7 +97,7 @@
     <div class="row featurette">
       <div class="col-md-12">
         <div class="fusion-text">
-          <h1 style="text-align: center;">Galerie photo</h1>
+          <h1 style="text-align: center;color: rgba(12,94,98,1);">Galerie photo</h1>
           <div class="fusion-sep-clear"></div><div class="fusion-separator sep-single sep-solid" style="border-color:#e97f7a;border-top-width:3px;margin-left: auto;margin-right: auto;margin-top:0px;margin-bottom:30px;width:100%;max-width:50PX;"></div>
           <p class="lead" >Retrouvez ici les meilleurs création de <strong>Le Germain</strong>. Fort de ses deux experts téchnicien <strong>André Legermain</strong> et <strong>Philippe Troquin</strong> habitués à intervenir, notamment, sur des bâtiments classés  Monuments <strong>Historiques.</strong>
               </p>
@@ -99,177 +105,9 @@
       </div>
     </div>
       <!-- START THE FEATURETTES -->
-
       <hr class="featurette-divider">
 
-      <div class="row featurette">
-        <div class="col-md-12">
-          <div class="fusion-text">
-          <h2 style="text-align: center;">Charpente</h2><div class="fusion-sep-clear"></div><div class="fusion-separator sep-single sep-solid" style="border-color:#e97f7a;border-top-width:3px;margin-left: auto;margin-right: auto;margin-top:0px;margin-bottom:30px;width:100%;max-width:50PX;"></div>
-          <p class="lead">La société <strong>Legermain</strong>, jeune entreprise alliant créativité et dynamisme, vous propose de mettre son savoir faire à votre service.
-          Pour  vos travaux de charpente, couverture, escaliers et autres ouvrages spécifiques faites confiance à deux techniciens du bois, <strong>André Legermain</strong> et <strong>Philippe Troquin</strong> habitués à intervenir, notamment, sur des bâtiments classés  Monuments <strong>Historiques.</strong>
-              </p>
-          </div>
-        </div>
-      </div>
-    </div>
-   <section >
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12">
-                <div class="row mb-4">
-                    <a href="{{asset('img/charpente (1).jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                        <img src="{{asset('img/charpente (1).jpg')}}" class="img-fluid">
-                    </a>
-                    <a href="{{asset('img/charpente (2).jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                        <img src="{{asset('img/charpente (2).jpg')}}" class="img-fluid">
-                    </a>
-                    <a href="{{asset('img/charpente (3).jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                        <img src="img/charpente (3).jpg" class="img-fluid">
-                    </a>
-                    <a href="{{asset('img/charpente (7).jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                        <img src="img/charpente (7).jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="row mb-4">
-                    <a href="img/charpente (4).jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                        <img src="img/charpente (4).jpg" class="img-fluid">
-                    </a>
-                    <a href="img/charpente (5).jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                        <img src="img/charpente (5).jpg" class="img-fluid">
-                    </a>
-                    <a href="img/charpente (6).jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                        <img src="img/charpente (6).jpg" class="img-fluid">
-                    </a>
-                    <a href="{{asset('img/charpente (8).jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                        <img src="img/charpente (8).jpg" class="img-fluid">
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="fusion-separator mt-5 sep-single sep-solid" style="border-color:#e97f7a;border-top-width:3px;margin-left: auto;margin-right: auto;margin-top:0px;margin-bottom:30px;width:100%;max-width:500PX;"></div>
-
-        <div class="row featurette">
-          <div class="col-md-12">
-            <div class="fusion-text">
-            <h2 style="text-align: center;">Couverture</h2><div class="fusion-sep-clear"></div><div class="fusion-separator sep-single sep-solid" style="border-color:#e97f7a;border-top-width:3px;margin-left: auto;margin-right: auto;margin-top:0px;margin-bottom:30px;width:100%;max-width:50PX;"></div>
-            <p class="lead"><strong>Legermain</strong>, dispose d'un <strong>savoir-faire</strong> précieux dans la couverture en ardoise et en tuile. Disposant d'une main d'oeuvre <strong>experimenté</strong> et à l'écoute, qui vous accompagnera dans vos projets de couvrage les plus osez !
-                </p>
-            </div>
-     <section >
-       <div class="gallery justify-content-center" id="gallery">
-         <!-- Grid column -->
-         <div class="mb-3 pics">
-           <a href="{{asset('img/couverture (2).jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-               <img src="{{asset('img/couverture (2).jpg')}}" class="img-fluid">
-           </a>
-         </div>
-         <!-- Grid column -->
-
-         <!-- Grid column -->
-         <div class="mb-3 pics">
-           <a href="{{asset('img/couverture (3).jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-               <img src="{{asset('img/couverture (3).jpg')}}" class="img-fluid">
-           </a>
-         </div>
-         <!-- Grid column -->
-
-         <!-- Grid column -->
-         <div class="mb-3 pics">
-           <a href="{{asset('img/couverture (5).jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-               <img src="{{asset('img/couverture (5).jpg')}}" class="img-fluid">
-           </a>
-         </div>
-         <!-- Grid column -->
-
-         <!-- Grid column -->
-         <div class="mb-3 pics">
-           <a href="{{asset('img/couverture (1).jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-               <img src="{{asset('img/couverture (1).jpg')}}" class="img-fluid">
-           </a>
-         </div>
-         <!-- Grid column -->
-
-         <div class="mb-3 pics">
-           <a href="{{asset('img/couverture1.jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-               <img src="{{asset('img/couverture1.jpg')}}" class="img-fluid">
-           </a>
-         </div>
-         <!-- Grid column -->
-
-         <!-- Grid column -->
-         <div class="mb-3 pics">
-           <a href="{{asset('img/couverture (4).jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-               <img src="{{asset('img/couverture (4).jpg')}}" class="img-fluid">
-           </a>
-         </div>
-         <!-- Grid column -->
-       </div>
-   </section>
-
-   <div class="fusion-separator mt-5 sep-single sep-solid" style="border-color:#e97f7a;border-top-width:3px;margin-left: auto;margin-right: auto;margin-top:0px;margin-bottom:30px;width:100%;max-width:500PX;"></div>
-
-   <div class="row featurette">
-     <div class="col-md-12">
-       <div class="fusion-text">
-       <h2 style="text-align: center;">Ouvrage</h2><div class="fusion-sep-clear"></div><div class="fusion-separator sep-single sep-solid" style="border-color:#e97f7a;border-top-width:3px;margin-left: auto;margin-right: auto;margin-top:0px;margin-bottom:30px;width:100%;max-width:50PX;"></div>
-       <p class="lead"><strong>Legermain</strong> vous accompagne dans vos projet de gros oeuvres. Fort de ses <strong>70 ans d'éxpérience</strong> sont savoir <strong>faire est reconnu</strong>.
-           </p>
-       </div>
- <section >
-  <div class="gallery justify-content-center" id="gallery">
-    <!-- Grid column -->
-    <div class="mb-3 pics">
-      <a href="{{asset('img/ouvrage (1).jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-          <img src="{{asset('img/ouvrage (1).jpg')}}" class="img-fluid">
-      </a>
-    </div>
-    <!-- Grid column -->
-
-    <!-- Grid column -->
-    <div class="mb-3 pics">
-      <a href="{{asset('img/ouvrage (6).jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-          <img src="{{asset('img/ouvrage (6).jpg')}}" class="img-fluid">
-      </a>
-    </div>
-    <!-- Grid column -->
-
-    <!-- Grid column -->
-    <div class="mb-3 pics">
-      <a href="{{asset('img/ouvrage (6).jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-          <img src="{{asset('img/ouvrage (6).jpg')}}" class="img-fluid">
-      </a>
-    </div>
-    <!-- Grid column -->
-
-    <!-- Grid column -->
-    <div class="mb-3 pics">
-      <a href="{{asset('img/ouvrage (6).jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-          <img src="{{asset('img/ouvrage (6).jpg')}}" class="img-fluid">
-      </a>
-    </div>
-    <!-- Grid column -->
-
-    <div class="mb-3 pics">
-      <a href="{{asset('img/ouvrage (6).jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-          <img src="{{asset('img/ouvrage (6).jpg')}}" class="img-fluid">
-      </a>
-    </div>
-    <!-- Grid column -->
-
-    <!-- Grid column -->
-    <div class="mb-3 pics">
-      <a href="{{asset('img/ouvrage (6).jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-          <img src="{{asset('img/ouvrage (6).jpg')}}" class="img-fluid">
-      </a>
-    </div>
-    <!-- Grid column -->
-  </div>
-  </section>
- </div>
- </div>
- </div>
+      {% block galerie %}{% endblock %}
 </div>
 </div>
 </div>
