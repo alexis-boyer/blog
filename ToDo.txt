@@ -1,0 +1,1 @@
+ - centrer logo dans index quand img reduit
