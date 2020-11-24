@@ -29,72 +29,71 @@
     position: absolute;
   }
 
-  .cute-separator{
-    border-color:#e97f7a;
-    border-top-width:3px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:0px;
-    margin-bottom:30px;
-    width:100%;
-    max-width:500PX;
+  .active-link {
+    border-bottom: 2px solid #FB7D09;
+    padding-bottom: 5px;
   }
 </style>
+
+{% set currentPath = path(app.request.attributes.get('_route'),
+                       app.request.attributes.get('_route_params')) %}
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- BLOCK : navbar -->
-<nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #CAA54D;opacity: 0.9;color: #534421;">
+<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light shadow-lg" style="opacity: 0.9;">
   <a class="navbar-brand" href="{{path("index")}}">
     <img src="{{asset('img/logo-maitreartisan.png')}}" width="75" height="50" alt="">
   </a>
   <ul class="navbar-nav mr-auto">
-    <li class="nav-item">
-      <a class="nav-link font-weight-bold text-uppercase px-4" style="font-family:Montserrat,Arial,Helvetica,sans-serif;" href="#">Contact </a>
+    <li class="nav-item ">
+      <a class="nav-link font-weight-bold text-uppercase navbar-text px-4" style="
+      font-family:Montserrat,Arial,Helvetica,sans-serif;" href="#">Contact </a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link font-weight-bold text-uppercase navbar-text px-4
+      {% if currentPath == path('galerieCharpente') %}active-link{% endif %}
+      {% if currentPath == path('galerieCouverture') %}active-link{% endif %}
+      {% if currentPath == path('galerieEouvre') %}active-link{% endif %}
+      " id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+      style="
+      {% if currentPath == path('galerieCharpente') %}color: #096007;{% endif %}
+      {% if currentPath == path('galerieCouverture') %}color: #096007;{% endif %}
+      {% if currentPath == path('galerieEouvre') %}color: #096007;{% endif %}">
+          Dropdown
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item font-weight-bold navbar-text px-4" href="{{path("galerieCharpente")}}">Charpente</a>
+          <a class="dropdown-item font-weight-bold navbar-text px-4" href="{{path("galerieCouverture")}}">Couverture</a>
+          <a class="dropdown-item font-weight-bold navbar-text px-4" href="{{path("galerieEouvre")}}">Eouvre</a>
+      </div>
     </li>
     <li class="nav-item">
-      <a class="nav-link font-weight-bold text-uppercase px-4" style="font-family:Montserrat,Arial,Helvetica,sans-serif;" href="{{path("galerie")}}">Galerie </a>
+      <a class="nav-link font-weight-bold text-uppercase navbar-text px-4
+      {% if currentPath == path('apropos') %}active-link{% endif %}" style="font-family:Montserrat,Arial,Helvetica,sans-serif;
+      {% if currentPath == path('apropos') %}color: #096007;{% endif %}" href="{{path("apropos")}}">À porpos de Nous </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link font-weight-bold text-uppercase px-4" style="font-family:Montserrat,Arial,Helvetica,sans-serif;" href="#">Contactez-Nous </a>
+      <a class="nav-link font-weight-bold text-uppercase navbar-text px-4" style="font-family:Montserrat,Arial,Helvetica,sans-serif;" href="#">Offres </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link font-weight-bold text-uppercase px-4" style="font-family:Montserrat,Arial,Helvetica,sans-serif;" href="#">Offres </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link font-weight-bold text-uppercase px-4" style="font-family:Montserrat,Arial,Helvetica,sans-serif;" href="#">Actualité </a>
+      <a class="nav-link font-weight-bold text-uppercase navbar-text px-4" style="font-family:Montserrat,Arial,Helvetica,sans-serif;" href="#">Actualité </a>
     </li>
   </ul>
 </nav>
 
-<nav class="navbar navbar-expand-md navbar-light" style="background-color: #CAA54D;opacity: 0;color: #534421;">
-  <a class="navbar-brand" href="#">
-    <img src="{{asset('img/logo-maitreartisan.png')}}" width="50" height="50" alt="">
+<nav class="navbar navbar-expand-md navbar-light bg-light shadow-lg" style="opacity:0;">
+  <a class="navbar-brand" href="{{path("index")}}">
+    <img src="{{asset('img/logo-maitreartisan.png')}}" width="75" height="50" alt="">
   </a>
-  <ul class="navbar-nav mr-auto">
-    <li class="nav-item">
-      <a class="nav-link font-weight-bold text-uppercase px-4" href="#">Contact </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link font-weight-bold text-uppercase px-4" href="#">Galerie </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link font-weight-bold text-uppercase px-4" href="#">Contactez-Nous </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link font-weight-bold text-uppercase px-4" href="#">Offres </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link font-weight-bold text-uppercase px-4" href="#">Actualité </a>
-    </li>
-  </ul>
 </nav>
+
 <!-- END BLOCK : navbar -->
 {% block body %}{% endblock %}
 
 <!-- BLOCK : footer -->
-<footer class="" style="background-color: #CAA54D;">
+<footer class="bg-dark">
 
     <div class = "container">
       <div class = "row">
