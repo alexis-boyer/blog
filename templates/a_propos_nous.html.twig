@@ -2,69 +2,141 @@
 
 
 {% block body %}
+
 <style media="screen">
 .fastview{
   width: 100%;
   height: 400px;
 }
 </style>
-<div class="h-50 text-center">
-  <img src="{{asset('img/imageBandeau1.JPG')}}" alt="vitrine" style="width:100%;">
-  <div class="container-fluid centered large mt-5">
-    <h1 class="large text-light">À Propos de Nous</h1>
-    <p class="text-light normal">Texte à propos de ce que l'on fait</p>
-    <p class="text-light normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+
+<style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  .accroche{font-size:40px;color:#fff;margin-bottom:0px}
+  .accroche{font-family:'Satisfy'!important;font-size:22px;margin:0!important;color:#333}
+
+   h2,.post-content
+    h2{font-family:Montserrat,Arial,Helvetica,sans-serif;font-weight:700;line-height:1.26;letter-spacing:0px;font-style:normal}#wrapper .post-content
+     h2{font-size:24px}
+   .post-content
+   h2{color:#2b2e32}
+   h1{margin-top:0.7em;margin-bottom:0.7em}
+   h2{margin-top:0em;margin-bottom:0.25em}
+.fusion-sep-clear{clear:both;display:block;height:1px;font-size:0;line-height:0;width:100%;overflow:hidden}
+.fusion-separator{border:0 solid #e7e6e6;clear:both;position:relative;z-index:11}
+
+.fusion-separator.sep-single{height:auto;border-top-width:1px;border-bottom-width:0}
+.fusion-separator.sep-solid{border-bottom-style:solid;border-top-style:solid}
+
+.cute-separator{
+border-color:#e97f7a;
+border-top-width:5px;
+margin-left: auto;
+margin-right: auto;
+margin-top:0px;
+margin-bottom:30px;
+width:100%;
+max-width:500PX;
+}
+
+
+</style>
+
+<div class="container marketing">
+
+
+
+  <!-- START THE FEATURETTES -->
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="fusion-text col-md-6">
+    <p class="accroche" style="text-align: center;center;color:  #fb7d09;">Qui sommes nous ?</p>
+    <h2 style="text-align: center;color: rgba(12,94,98,1);">À Propos de Nous</h2><div class="fusion-sep-clear"></div><div class="fusion-separator sep-single sep-solid" style="border-color:#e97f7a;border-top-width:3px;margin-left: auto;margin-right: auto;margin-top:0px;margin-bottom:30px;width:100%;max-width:50PX;"></div>
+    <div class="fusion-text">
+      <p class="lead">Texte à propos de ce que l'on fait, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Léna ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor.Alexis est nul Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+      </p>
+    </div>
+  </div>
+  <div class="fusion-text col-md-6">
+    <img src="{{asset("img/charpente (1).jpg")}}" class = "img-fluid" alt="" style = "height: 500px;">
   </div>
 </div>
 
-<div class="container-fluid mt-5">
-  <div class="row">
-    <p style= "width: 90%; margin-left: 5%;" class="normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</p>
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="fusion-text">
+  <p class="accroche" style="text-align: center;center;color:  #fb7d09;">Que faisons nous ?</p>
+  <h2 style="text-align: center;color: rgba(12,94,98,1);">Nos Compétence</h2><div class="fusion-sep-clear"></div><div class="fusion-separator sep-single sep-solid" style="border-color:#e97f7a;border-top-width:3px;margin-left: auto;margin-right: auto;margin-top:0px;margin-bottom:30px;width:100%;max-width:50PX;"></div>
+  <div class="fusion-text">
+    <p class="lead">Texte à propos de ce que l'on fait, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Léna ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor.Alexis est nul Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+    </p>
   </div>
-</div>
-
-<h2 class = "mt-5 mb-5 title" style="text-align:center;">Nos Compétence</h2>
-<div class="container-fluid text-center row">
-  <div class="row">
-      <div class="col-sm md-4">
-        <div class="card">
-          <img src="{{asset('img/charpenteVueRapide.JPG')}}" class="img-fluid fastview" alt="Jane">
-          <div class="container">
-            <h2>Meunuiserie</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm md-4">
-        <div class="card">
-          <img src="{{asset('img/couvertureVueRapide.JPG')}}" class="img-fluid fastview" alt="Mike">
-          <div class="container">
-            <h2>Couverture</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm md-4">
-        <div class="card">
-          <img src="{{asset('img/ouvrageVueRapide.JPG')}}" class="img-fluid fastview" alt="John">
-          <div class="container">
-            <h2>ouvrage</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-          </div>
-        </div>
+  <div class="row mt-4">
+  <div class="col-sm md-4 mt-2">
+    <div class="card">
+      <img src="{{asset('img/charpenteVueRapide.JPG')}}" class="img-fluid fastview" style = "height: 300px;" alt="Jane">
+      <div class="container mt-4">
+        <h2 style="text-align: center;color: rgba(12,94,98,1);">Meunuiserie</h2>
+        <div class="fusion-sep-clear"></div><div class="fusion-separator sep-single sep-solid" style="border-color:#e97f7a;border-top-width:3px;margin-left: auto;margin-right: auto;margin-top:0px;margin-bottom:30px;width:100%;max-width:50PX;"></div>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
       </div>
     </div>
   </div>
 
-<div class="fluid-container text-center">
-  <h2 class="text-center mt-4 mb-4 title">Où nous trouver</h2>
+  <div class="col-sm md-4 mt-2">
+    <div class="card">
+      <img src="{{asset('img/couvertureVueRapide.JPG')}}" class="img-fluid fastview" style = "height: 300px;" alt="Mike">
+      <div class="container mt-4">
+        <h2 style="text-align: center;color: rgba(12,94,98,1);">Couverture</h2>
+        <div class="fusion-sep-clear"></div><div class="fusion-separator sep-single sep-solid" style="border-color:#e97f7a;border-top-width:3px;margin-left: auto;margin-right: auto;margin-top:0px;margin-bottom:30px;width:100%;max-width:50PX;"></div>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm md-4 mt-2">
+    <div class="card">
+      <img src="{{asset('img/ouvrageVueRapide.JPG')}}" class="img-fluid fastview" style = "height: 300px;" alt="John">
+      <div class="container mt-4">
+        <h2 style="text-align: center;color: rgba(12,94,98,1);">Ouvrage</h2>
+        <div class="fusion-sep-clear"></div><div class="fusion-separator sep-single sep-solid" style="border-color:#e97f7a;border-top-width:3px;margin-left: auto;margin-right: auto;margin-top:0px;margin-bottom:30px;width:100%;max-width:50PX;"></div>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+      </div>
+    </div>
+  </div>
 </div>
-<div id="map-container-google-1" class="z-depth-1-half map-container">
-  <iframe src="https://maps.google.com/maps?q=tours&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-  style="border:0" allowfullscreen class="centered"></iframe>
+</div>
 </div>
 
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="fusion-text col-md-12">
+    <p class="accroche" style="text-align: center;center;color:  #fb7d09;">Où nous trouver ?</p>
+    <h2 style="text-align: center;color: rgba(12,94,98,1);">Notre Secteur</h2><div class="fusion-sep-clear"></div><div class="fusion-separator sep-single sep-solid" style="border-color:#e97f7a;border-top-width:3px;margin-left: auto;margin-right: auto;margin-top:0px;margin-bottom:30px;width:100%;max-width:50PX;"></div>
+    <div id="map-container-google-1" class="z-depth-1-half map-container">
+      <iframe src="https://maps.google.com/maps?q=tours&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+      style="border:0" allowfullscreen class="centered"></iframe>
+</div>
+</div>
+</div>
+</div>
 
 {% endblock %}
