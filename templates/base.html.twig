@@ -63,7 +63,7 @@
       {% if currentPath == path('galerieCharpente') %}color: #096007;{% endif %}
       {% if currentPath == path('galerieCouverture') %}color: #096007;{% endif %}
       {% if currentPath == path('galerieEouvre') %}color: #096007;{% endif %}">
-          Dropdown
+          Galerie
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item font-weight-bold navbar-text px-4" href="{{path("galerieCharpente")}}">Charpente</a>
@@ -77,10 +77,9 @@
       {% if currentPath == path('apropos') %}color: #096007;{% endif %}" href="{{path("apropos")}}">À porpos de Nous </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link font-weight-bold text-uppercase navbar-text px-4" style="font-family:Montserrat,Arial,Helvetica,sans-serif;" href="#">Offres </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link font-weight-bold text-uppercase navbar-text px-4" style="font-family:Montserrat,Arial,Helvetica,sans-serif;" href="#">Actualité </a>
+      <a class="nav-link font-weight-bold text-uppercase navbar-text px-4
+      {% if currentPath == path('contact') %}active-link{% endif %}" style="font-family:Montserrat,Arial,Helvetica,sans-serif;
+      {% if currentPath == path('contact') %}color: #096007;{% endif %}" href="{{path("contact")}}">Offres </a>
     </li>
   </ul>
 </nav>

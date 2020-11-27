@@ -31,7 +31,7 @@ class ConferenceController extends AbstractController
      */
       public function offre()
       {
-          return $this->render('offre.twig',['name' => 'welcome'
+          return $this->render('offre.html.twig',['name' => 'welcome'
           ]);
       }
 
