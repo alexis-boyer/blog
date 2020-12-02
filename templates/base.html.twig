@@ -44,7 +44,7 @@
 <!-- BLOCK : navbar -->
 <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light shadow-lg" style="opacity: 0.9;">
   <a class="navbar-brand" href="{{path("index")}}">
-    <img src="{{asset('img/logo-maitreartisan.png')}}" width="75" height="50" alt="">
+    <img src="{{asset('img/logo (1).png')}}" width="125" height="50" alt="">
   </a>
   <ul class="navbar-nav mr-auto">
     <li class="nav-item ">
@@ -53,23 +53,20 @@
       font-family:Montserrat,Arial,Helvetica,sans-serif;
       {% if currentPath == path('contact') %}color: #096007;{% endif %}" href="{{path("contact")}}">Contact </a>
     </li>
-    <li class="nav-item dropdown">
+    <li class="nav-item">
       <a class="nav-link font-weight-bold text-uppercase navbar-text px-4
-      {% if currentPath == path('galerieCharpente') %}active-link{% endif %}
-      {% if currentPath == path('galerieCouverture') %}active-link{% endif %}
-      {% if currentPath == path('galerieEouvre') %}active-link{% endif %}
-      " id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-      style="
-      {% if currentPath == path('galerieCharpente') %}color: #096007;{% endif %}
-      {% if currentPath == path('galerieCouverture') %}color: #096007;{% endif %}
-      {% if currentPath == path('galerieEouvre') %}color: #096007;{% endif %}">
-          Galerie
-      </a>
-      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item font-weight-bold navbar-text px-4" href="{{path("galerieCharpente")}}">Charpente</a>
-          <a class="dropdown-item font-weight-bold navbar-text px-4" href="{{path("galerieCouverture")}}">Couverture</a>
-          <a class="dropdown-item font-weight-bold navbar-text px-4" href="{{path("galerieEouvre")}}">Eouvre</a>
-      </div>
+      {% if currentPath == path('galerieCharpente') %}active-link{% endif %}" style="font-family:Montserrat,Arial,Helvetica,sans-serif;
+      {% if currentPath == path('galerieCharpente') %}color: #096007;{% endif %}" href="{{path("galerieCharpente")}}">Charpentes </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link font-weight-bold text-uppercase navbar-text px-4
+      {% if currentPath == path('galerieCouverture') %}active-link{% endif %}" style="font-family:Montserrat,Arial,Helvetica,sans-serif;
+      {% if currentPath == path('galerieCouverture') %}color: #096007;{% endif %}" href="{{path("galerieCouverture")}}">Couvertures </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link font-weight-bold text-uppercase navbar-text px-4
+      {% if currentPath == path('galerieEouvre') %}active-link{% endif %}" style="font-family:Montserrat,Arial,Helvetica,sans-serif;
+      {% if currentPath == path('galerieEouvre') %}color: #096007;{% endif %}" href="{{path("galerieEouvre")}}">Eouvres </a>
     </li>
     <li class="nav-item">
       <a class="nav-link font-weight-bold text-uppercase navbar-text px-4
@@ -86,7 +83,7 @@
 
 <nav class="navbar navbar-expand-md navbar-light bg-light shadow-lg" style="opacity:0;">
   <a class="navbar-brand" href="{{path("index")}}">
-    <img src="{{asset('img/logo-maitreartisan.png')}}" width="75" height="50" alt="">
+    <img src="{{asset('img/logo (1).png')}}" width="125" height="50" alt="">
   </a>
 </nav>
 
