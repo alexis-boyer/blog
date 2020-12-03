@@ -1,48 +1,78 @@
 {% extends 'galerie.html.twig' %}
 
+{% block titre %}Charpente{% endblock %}
+
 {% block galerie %}
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="{{asset("css/index.css")}}">
 
 <div class="row featurette">
-  <div class="col-md-12">
+  <div class="col-md-12 mb-3">
     <div class="fusion-text">
-    <h2 style="text-align: center;color: rgba(12,94,98,1);">Charpente</h2><div class="fusion-sep-clear"></div><div class="fusion-separator sep-single sep-solid" style="border-color:#e97f7a;border-top-width:3px;margin-left: auto;margin-right: auto;margin-top:0px;margin-bottom:30px;width:100%;max-width:50PX;"></div>
-    <p class="lead">La société <strong>Legermain</strong>, jeune entreprise alliant créativité et dynamisme, vous propose de mettre son savoir faire à votre service.
+    <h2 style="text-align: center;color: rgba(12,94,98,1);">Savoir-Faire</h2>
+    <div class="fusion-sep-clear"></div><div class="fusion-separator sep-single sep-solid" style="border-color:#e97f7a;border-top-width:3px;margin-left: auto;margin-right: auto;margin-top:0px;margin-bottom:30px;width:100%;max-width:50PX;"></div>
+    <p class="lead text-justify">La société <strong>Legermain</strong>, jeune entreprise alliant créativité et dynamisme, vous propose de mettre son savoir faire à votre service.
     Pour  vos travaux de charpente, couverture, escaliers et autres ouvrages spécifiques faites confiance à deux techniciens du bois, <strong>André Legermain</strong> et <strong>Philippe Troquin</strong> habitués à intervenir, notamment, sur des bâtiments classés  Monuments <strong>Historiques.</strong>
-        </p>
+    </p>
     </div>
   </div>
 </div>
+<hr class="featurette-divider">
+<div class="row featurette">
+  <div class="col-8 mt-3 mb-3">
+    <div class="fusion-text">
+    <h2 style="text-align: center;color: rgba(12,94,98,1);">Nos Compétence</h2>
+    <div class="fusion-sep-clear"></div><div class="fusion-separator sep-single sep-solid" style="border-color:#e97f7a;border-top-width:3px;margin-left: auto;margin-right: auto;margin-top:0px;margin-bottom:30px;width:100%;max-width:50PX;"></div>
+    <p class="lead text-justify">
+      Texte à propos de ce que l'on fait, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Léna ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.
+    </p>
+    </div>
+  </div>
+  <div class="col-md-4 mt-3 mb-3">
+    <div class="mb-5" ></div>
+    <div class="mb-5" ></div>
+
+<div class="single-works">
+          <img src="{{asset("img/charpente (2).JPG")}}" style = "height: 335px;" alt=""  >
+
+      </div>
+</div>
+</div>
+
+<hr class="featurette-divider">
+
 </div>
 <section >
-<div class="container">
+<div class="container mt-3">
   <div class="row justify-content-center">
       <div class="col-md-12">
           <div class="row mb-4">
               <a href="{{asset('img/charpente (1).jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                  <img src="{{asset('img/charpente (1).jpg')}}" class="img-fluid image-galerie">
+                  <img src="{{asset('img/charpente (1).jpg')}}" class="img-fluid image-galerie single-works">
               </a>
               <a href="{{asset('img/charpente (2).jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                  <img src="{{asset('img/charpente (2).jpg')}}" class="img-fluid image-galerie">
+                  <img src="{{asset('img/charpente (2).jpg')}}" class="img-fluid image-galerie single-works">
               </a>
               <a href="{{asset('img/charpente (3).jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                  <img src="{{asset('img/charpente (3).jpg')}}" class="img-fluid image-galerie">
+                  <img src="{{asset('img/charpente (3).jpg')}}" class="img-fluid image-galerie single-works">
               </a>
               <a href="{{asset('img/charpente (7).jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                  <img src="{{asset('img/charpente (7).jpg')}}" class="img-fluid image-galerie">
+                  <img src="{{asset('img/charpente (7).jpg')}}" class="img-fluid image-galerie single-works">
               </a>
           </div>
           <div class="row mb-4">
               <a href="{{asset('img/charpente (4).jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                  <img src="{{asset('img/charpente (4).jpg')}}" class="img-fluid image-galerie">
+                  <img src="{{asset('img/charpente (4).jpg')}}" class="img-fluid image-galerie single-works">
               </a>
               <a href="{{asset('img/charpente (5).jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                  <img src="{{asset('img/charpente (5).jpg')}}" class="img-fluid image-galerie">
+                  <img src="{{asset('img/charpente (5).jpg')}}" class="img-fluid image-galerie single-works">
               </a>
               <a href="{{asset('img/charpente (6).jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                  <img src="{{asset('img/charpente (6).jpg')}}" class="img-fluid image-galerie">
+                  <img src="{{asset('img/charpente (6).jpg')}}" class="img-fluid image-galerie single-works">
               </a>
               <a href="{{asset('img/charpente (8).jpg')}}" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
-                  <img src="{{asset('img/charpente (8).jpg')}}" class="img-fluid image-galerie">
+                  <img src="{{asset('img/charpente (8).jpg')}}" class="img-fluid image-galerie single-works">
               </a>
           </div>
       </div>
