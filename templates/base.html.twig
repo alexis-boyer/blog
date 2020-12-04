@@ -70,15 +70,13 @@
     </li>
     <li class="nav-item">
       <a class="nav-link font-weight-bold text-uppercase navbar-text px-4
-      {% if currentPath == path('apropos') %}active-link{% endif %}" style="font-family:Montserrat,Arial,Helvetica,sans-serif;
-      {% if currentPath == path('apropos') %}color: #096007;{% endif %}" href="{{path("apropos")}}">À porpos de Nous </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link font-weight-bold text-uppercase navbar-text px-4
       {% if currentPath == path('offre') %}active-link{% endif %}" style="font-family:Montserrat,Arial,Helvetica,sans-serif;
-      {% if currentPath == path('offre') %}color: #096007;{% endif %}" href="{{path("offre")}}">Offres </a>
+      {% if currentPath == path('offre') %}color: #096007;{% endif %}" href="{{path("offre")}}">Rejoignez-Nous </a>
     </li>
   </ul>
+  <span class="navbar-text">
+    <a href="{{path("inscription")}}" class = "font-weight-bold text-uppercase text-secondary" style="font-family:Montserrat,Arial,Helvetica,sans-serif;">Inscripton/Connection</a>
+    </span>
 </nav>
 
 <nav class="navbar navbar-expand-md navbar-light bg-light shadow-lg" style="opacity:0;">
@@ -91,34 +89,125 @@
 {% block body %}{% endblock %}
 
 <!-- BLOCK : footer -->
-<footer class="bg-dark">
+<footer style="background-color: #0c5e62">
 
-    <div class = "container">
-      <div class = "row">
-        <div class="col text-center">
+    <div style="background-color: #fb7d09;">
+      <div class="container">
 
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
 
-        <nav class="navbar navbar-expand-md navbar-light position-sticky">
-          <ul class="navbar-nav py-4 mx-auto ">
-            <li class="nav-item"><a class="nav-link font-weight-bold text-uppercase px-4" style="font-family:Montserrat,Arial,Helvetica,sans-serif;" href="{{path("index")}}">Acceuil</a></li>
-            <li class="nav-item"><a class="nav-link font-weight-bold text-uppercase px-4" style="font-family:Montserrat,Arial,Helvetica,sans-serif;" href = "{{path("apropos")}}">À Porpos de Nous</a></li>
-            <li class="nav-item"><a class="nav-link font-weight-bold text-uppercase px-4" style="font-family:Montserrat,Arial,Helvetica,sans-serif;" href = "#legale">Mentions légales</a></li>
-            <li class="nav-item"><a class="nav-link font-weight-bold text-uppercase px-4" style="font-family:Montserrat,Arial,Helvetica,sans-serif;" href = "#plan">Plan du site</a></li>
-          </ul>
-        </nav>
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md">
+            <h6 class="mb-0">Joignez nous sur nos réseaux!</h6>
+          </div>
+          <!-- Grid column -->
 
-        <div class="py-2">
-          <a href="#"><i class="fab fa-facebook fa-2x text-primary mx-3"></i></a>
-          <a href="#"><i class="fab fa-google-plus fa-2x text-danger mx-3"></i></a>
-          <a href="#"><i class="fab fa-tweeter fa-2x text-info mx-3"></i></a>
-          <a href="#"><i class="fab fa-linkedin fa-2x text-primary mx-3"></i></a>
-          <a href="#"><i class="fab fa-instagram fa-2x text-primary mx-3"></i></a>
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f white-text mr-4 fa-2x"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fab fa-twitter white-text mr-4 fa-2x"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fab fa-google-plus-g white-text mr-4 fa-2x"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fab fa-linkedin-in white-text mr-4 fa-2x"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fab fa-instagram white-text fa-2x"> </i>
+            </a>
+
+          </div>
+          <!-- Grid column -->
 
         </div>
-        <p class="text-light py-4">&copy;Copyright - 2020 by Groupe 8</p>
-        </div>
+        <!-- Grid row-->
+
       </div>
     </div>
+
+    <!-- Footer Links -->
+    <div class="container text-center  text-md-left mt-5">
+
+      <!-- Grid row -->
+      <div class="row mt-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold" style="color: #fb7d09;">Legermain</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p class="text-light">Artisanat bois création</p>
+          <p class="text-light">Créativité</p>
+          <p class="text-light">Dynamisme</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold" style="color: #fb7d09;">SERVICES</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a class="text-light overflow-auto"  href="#">Charpentes</a>
+          </p>
+          <p>
+            <a class="text-light" href="#">Couvertures</a>
+          </p>
+          <p>
+            <a class="text-light" href="#">Ouvrages</a>
+          </p>
+
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold" style="color: #fb7d09;">Liens usuels</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a class="text-light" href="#">Apropos de nous</a>
+          </p>
+          <p>
+            <a class="text-light" href="#">Contactez-nous</a>
+          </p>
+          <p>
+            <a class="text-light" href="#">Mentins legales</a>
+          </p>
+
+
+        </div>
+        <!-- Grid column -->
+
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-light text-center py-3">© 2020 Copyright:
+      <a class="text-light"  href="#"> Legermain.com</a>
+    </div>
+    <!-- Copyright -->
+
   </footer>
 <!-- END BLOCK : footer -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -1,9 +1,1 @@
-- mettre a jour fonts dans les pages
- - enlever le menu déroulant et remplacé par galerie par charpente couverture et ouvrages
- - changer Meunuiserie en charpente
- - ombré toutes les images
- - enlever Meunuiserie, couverture, etc.
- - changer galerie en réalisation
- - changer les galeries
- - centrer logo dans index quand img reduit
- - refaire apropos
+
